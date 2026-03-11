@@ -23,6 +23,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/tabbar.css" rel="stylesheet">
 
 </head>
 
@@ -100,135 +101,207 @@
   <main class="main">
     <section id="starter-section" class="starter-section section">
 
-      <!-- VPS Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>VPS Web Hosting</h2>
-        <p>Apa itu VPS Hosting Server<br></p>
+        <h2>Layanan Ruang Server</h2>
+        <p>Ruang Server Universitas Sriwijaya Melayani:</p>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'VPS')">VPS Web Hosting</button>
+          <button class="tablinks" onclick="openCity(event, 'CoLo')">Co-Location Server</button>
+        </div>
+
+        <div id="VPS" class="tabcontent">
+          <!-- VPS Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <br><br>
+            <h2>VPS Web Hosting</h2>
+            <p>Apa itu VPS Hosting Server<br></p>
+            <br>
+            Layanan web hosting disediakan bagi fakultas/jurusan/lembaga/unit kerja resmi kampus yang mempublikasikan informasinya masing-masing ke internet.
+            <strong>Virtual Private Server (VPS)</strong> hosting adalah layanan server virtual yang menggunakan teknologi virtualisasi untuk membagi satu server fisik menjadi 
+            beberapa server independen. Setiap VPS memiliki resource khusus (CPU, RAM, penyimpanan) yang tidak dibagi dengan pengguna lain, memberikan kontrol penuh, 
+            keamanan, dan kinerja lebih stabil.
+          </div>
+          <!-- VPS Title -->
+          
+          <!-- Siapa yang mendapatkan -->
+          <section id="about-us" class="section about-us">
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                  <h3>Siapa sajakah yang bisa menggunakan layanan ini???</h3>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Fakultas</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Jurusan</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Lembaga</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Direktorat</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Unit kerja</span></li>
+                  </ul>
+                  Dilingkungan Universitas Sriwijaya, untuk kebutuhan publikasi dan kegiatan serta kebutuhan publikasi ejournal dosen.
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Siapa yang mendapatkan -->
+
+          <!-- Fasilitas -->
+          <section id="counts" class="section counts light-background">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Fasilitas Layanan</h3>
+                  <ul>
+                    <li>
+                      <strong>Domain</strong><br>
+                        Nama domain sendiri, dapat menggunakan nama domain sesuai dengan kebutuhan untuk kebutuhan publikasi menggunakan domain *.unsri.ac.id 
+                        (untuk kebutuhan kegiatan fakultas, jurusan, unit kerja, direktorat) atau *.ejournal.unsri.ac.id (untuk kebutuhan publikasi ejounral dengan OJS) 
+                        atau *.conf.unsri.ac.id (untuk kebutuhan publikasi acara konferensi).
+                        <br>Sebagai contoh : fakultas.unsri.ac.id, jurnalejournal.ejournal.unsri.ac.id, konferensi.conf.unsri.ac.id
+                    </li>
+                    <li>
+                      <strong>Optimized SSD</strong><br>
+                        Server hosting menggunakan optimized SSD untuk performa tinggi yang membuat website diakses sangat cepat
+                    </li>
+                    <li>
+                      <strong>Control Panel</strong><br>
+                        Server hosting dilengkapi dengan control panel yang ramah pengguna dengan antarmuka yang sederhana 
+                        sehingga memudahkan dan membuat website semakin nyaman
+                    </li>
+                    <li>
+                      <strong>Quota Disk</strong><br>
+                        Batasan disk untuk masing-masing domain adalah sebesar 2-10 GB untuk masing-masing pengguna layanan hosting. 
+                        namun bisa di re-scaling sesuai dengan kebutuhan.
+                    </li>
+                  </ul>    
+                </div>
+                <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                  <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">    
+                </div>
+              </div>
+              <li>
+                <strong>Sertifikat SSL</strong><br>
+                    Mengenkripsi konten website dan membuat pengunjung website mengetahui jika website terpercaya dan aman
+              </li>
+              <li>
+                <strong>Backup Mingguan</strong><br>
+                    Tidak perlu khawatir dengan backup mingguan website. Server hosting memberikan backup mingguan dengan retensi 
+                    selama 2-3 backup kemudahan restore data hanya dengan 1 klik
+              </li>
+            </div>
+          </section>
+          <!-- Fasilitas -->
+
+          <!-- prosedur Section -->
+          <section id="about-us" class="section about-us">
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                  <h3>Bagaimana cara mendapatkan VPS Web Hosting</h3>
+                  SOP Pelayanan Permintaan VPS Web Hosting
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>download dan isi formulir <a href="#">disini</a></span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>lampirkan file surat resmi dari pimpinan untuk permintaan pembuatan VPS dalam 1 file PDF dengan formulir</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>kirim file PDF tersebut ke Helpdesk Layanan UNSRI</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>formulir dan surat resmi bisa dikirimkan fisik ke DPPTI di Gedung Student Center Kampus Indralaya Lantai 4</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- prosedur Section -->
+        </div>
+
+        <div id="CoLo" class="tabcontent">
+          <!-- Co-Location Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <br><br>
+            <h2>Co-Location Server</h2>
+            <p>Apa itu Co-Location Server<br></p>
+            <br>
+            Colocation server adalah layanan penyewaan ruang, rak, atau ruangan di pusat data (data center) untuk menempatkan server fisik milik Anda sendiri. 
+            Penyedia layanan menyediakan infrastruktur pendukung seperti listrik, pendingin, koneksi internet cepat, dan keamanan fisik 24/7, sementara Anda 
+            tetap memiliki kontrol penuh atas perangkat keras.
+          </div>
+          <!-- Co-Location Title -->
+
+          <!-- Siapa yang mendapatkan -->
+          <section id="about-us" class="section about-us">
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                  <h3>Siapa sajakah yang bisa menggunakan layanan ini???</h3>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Fakultas</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Jurusan</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Lembaga</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Direktorat</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Unit kerja</span></li>
+                  </ul>
+                  Dilingkungan Universitas Sriwijaya, untuk kebutuhan publikasi dan kegiatan serta riset.
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Siapa yang mendapatkan -->
+
+          <!-- Fasilitas -->
+          <section id="counts" class="section counts light-background">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Fasilitas Layanan</h3>
+                  <ul>
+                    <li>
+                      <strong>Domain</strong><br>
+                        Nama domain sendiri, dapat menggunakan nama domain sesuai dengan kebutuhan untuk kebutuhan publikasi menggunakan domain *.unsri.ac.id 
+                        (untuk kebutuhan kegiatan fakultas, jurusan, unit kerja, direktorat) atau *.ejournal.unsri.ac.id (untuk kebutuhan publikasi ejounral dengan OJS) 
+                        atau *.conf.unsri.ac.id (untuk kebutuhan publikasi acara konferensi).
+                        <br>Sebagai contoh : fakultas.unsri.ac.id, jurnalejournal.ejournal.unsri.ac.id, konferensi.conf.unsri.ac.id
+                    </li>
+                    <li>
+                      <strong>Control Panel</strong><br>
+                        Server hosting dilengkapi dengan control panel yang ramah pengguna dengan antarmuka yang sederhana 
+                        sehingga memudahkan dan membuat website semakin nyaman
+                    </li>
+                    <li>
+                      <strong>Sertifikat SSL</strong><br>
+                        Mengenkripsi konten website dan membuat pengunjung website mengetahui jika website terpercaya dan aman
+                    </li>
+                    <li>
+                      <strong>IP Public dan IP Private</strong><br>
+                        menggunakan IP public atau IP private sesuai dengan kebutuhan. dengan menggunakan IP public server dapat diakses kapanpun dan dimanapun,
+                        sedangkan dengan menggunakan IP private server hanya dapat diakses didalam jaringan UNSRI namun dapat diakses secara public menggunakan VPN UNSRI.
+                    </li>
+                    <li>
+                      <strong>Firewall</strong><br>
+                        Pengamanan dari sisi Network (layer 3) menggunakan perangkat firewall apliance, dan pengamanan dari sisi Aplikasi (Layer 7) menggunakan 
+                        Web Application Firewall (WAF) untuk melindungi server dari serangan siber dan ancaman keamanan lainnya.
+                      </li>
+                  </ul>    
+                </div>
+                <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                  <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">    
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Fasilitas -->
+        </div>
+
       </div>
-      <!-- VPS Title -->
 
-      <div class="container" data-aos="fade-up">
-        Layanan web hosting disediakan bagi fakultas/jurusan/lembaga/unit kerja resmi kampus yang mempublikasikan informasinya masing-masing ke internet.
-        <strong>Virtual Private Server (VPS)</strong> hosting adalah layanan server virtual yang menggunakan teknologi virtualisasi untuk membagi satu server fisik menjadi 
-        beberapa server independen. Setiap VPS memiliki resource khusus (CPU, RAM, penyimpanan) yang tidak dibagi dengan pengguna lain, memberikan kontrol penuh, 
-        keamanan, dan kinerja lebih stabil.
-      </div>
-
-      <!-- Siapa yang mendapatkan -->
-      <section id="about-us" class="section about-us">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-              <h3>Siapa sajakah yang bisa menggunakan layanan ini???</h3>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Fakultas</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Jurusan</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Lembaga</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Direktorat</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Unit kerja</span></li>
-              </ul>
-              <p class="fst-italic">
-                Dilingkungan Universitas Sriwijaya, untuk kebutuhan publikasi dan kegiatan serta kebutuhan publikasi ejournal dosen.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Siapa yang mendapatkan -->
-
-      <!-- Fasilitas -->
-      <section id="counts" class="section counts light-background">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-              <h3>Fasilitas Layanan</h3>
-              <ul>
-                <li>
-                  <strong>Domain</strong><br>
-                  <p class="fst-italic">
-                    Nama domain sendiri, dapat menggunakan nama domain sesuai dengan kebutuhan untuk kebutuhan publikasi menggunakan domain *.unsri.ac.id 
-                    (untuk kebutuhan kegiatan fakultas, jurusan, unit kerja, direktorat) atau *.ejournal.unsri.ac.id (untuk kebutuhan publikasi ejounral dengan OJS) 
-                    atau *.conf.unsri.ac.id (untuk kebutuhan publikasi acara konferensi).
-                    <br>Sebagai contoh : fakultas.unsri.ac.id, jurnalejournal.ejournal.unsri.ac.id, konferensi.conf.unsri.ac.id
-                  </p>
-                </li>
-                <li>
-                  <strong>Optimized SSD</strong><br>
-                  <p class="fst-italic">
-                    Server hosting menggunakan optimized SSD untuk performa tinggi yang membuat website diakses sangat cepat
-                  </p>
-                </li>
-                <li>
-                  <strong>Control Panel</strong><br>
-                  <p class="fst-italic">
-                    Server hosting dilengkapi dengan control panel yang ramah pengguna dengan antarmuka yang sederhana 
-                    sehingga memudahkan dan membuat website semakin nyaman
-                  </p>
-                </li>
-                <li>
-                  <strong>Control Panel</strong><br>
-                  <p class="fst-italic">
-                    Server hosting dilengkapi dengan control panel yang ramah pengguna dengan antarmuka yang sederhana 
-                    sehingga memudahkan dan membuat website semakin nyaman
-                  </p>
-                </li>
-              </ul>    
-            </div>
-            <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">    
-            </div>
-          </div>
-          <li>
-            <strong>Quota Disk</strong><br>
-              <p class="fst-italic">
-                Batasan disk untuk masing-masing domain adalah sebesar 2-10 GB untuk masing-masing pengguna layanan hosting. namun bisa di re-scaling sesuai dengan kebutuhan.
-              </p>
-          </li>
-          <li>
-            <strong>Sertifikat SSL</strong><br>
-              <p class="fst-italic">
-                Mengenkripsi konten website dan membuat pengunjung website mengetahui jika website terpercaya dan aman
-              </p>
-          </li>
-          <li>
-            <strong>Backup Mingguan</strong><br>
-              <p class="fst-italic">
-                Tidak perlu khawatir dengan backup mingguan website. Server hosting memberikan backup mingguan dengan retensi 
-                selama 2-3 backup kemudahan restore data hanya dengan 1 klik
-              </p>
-          </li>
-        </div>
-      </section>
-      <!-- Fasilitas -->
-
-      <!-- prosedur Section -->
-      <section id="about-us" class="section about-us">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/about/about-1.webp" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-              <h3>Bagaimana cara mendapatkan VPS Web Hosting</h3>
-              <p class="fst-italic">
-                SOP Pelayanan Permintaan VPS Web Hosting
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>download dan isi formulir <a href="#">disini</a></span></li>
-                <li><i class="bi bi-check-circle"></i> <span>lampirkan file surat resmi dari pimpinan untuk permintaan pembuatan VPS dalam 1 file PDF dengan formulir</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>kirim file PDF tersebut ke Helpdesk Layanan UNSRI</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>formulir dan surat resmi bisa dikirimkan fisik ke DPPTI di Gedung Student Center Kampus Indralaya Lantai 4</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- prosedur Section -->
     </sections>
   </main>
 
@@ -292,6 +365,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/tabbar.js"></script>
 
 </body>
 </html>
