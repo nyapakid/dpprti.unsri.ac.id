@@ -23,6 +23,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/tabbar.css" rel="stylesheet">
 
 </head>
 
@@ -88,157 +89,90 @@
   </header>
 
   <main class="main">
-    <!-- pimpinan Section -->
-    <section id="trainers-index" class="section trainers-index">
-      <!-- Pimpinan Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Staff dan Pimpinan</h2>
-        <p>Sub direktorat Pengembangan Teknologi Informasi</p>
-      </div>
-      <!-- Pimpinan Title -->
+    <section id="starter-section" class="starter-section section">
 
-      <!--pimpinan staff -->
-      <div class="container">
-        
-        <!-- direktur -->
-        <div class="row gy-8 justify-content-center text-center">
-          <!-- Box -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Dr. Firdaus, S.T., M.Kom.</h4>
-                <span>
-                  Kepala Sub Direktorat Bagian Pengembangan Teknologi Informasi
-                </span>
-                <p>
-                  NIP / NIDN: 197801212008121003/0221017801<br>
-                  Golongan / Pangkat: III/c Penata<br>
-                  Jabatan Fungsional: Lektor<br>
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
+        <div class="container section-title" data-aos="fade-up">
+
+            <h2>Direktorat Pelayanan dan Pengembangan Teknologi Informasi</h2>
+            <p>Layanan Internet Kampus</p>
+    
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'office365')">Office 365</button>
+                <button class="tablinks" onclick="openCity(event, 'gws')">Google Workspace</button>
             </div>
-          </div>
-          <!-- End Box -->
+    
+            <div id="office365" class="tabcontent">
+
+              <div>
+
+                  <a align="justify">
+                    Microsoft Office 365 untuk Dosen dan Tenaga Kependidikan, layanan Microsoft Office 365 (M365) merupakan layanan bagi dosen dan tenaga kependidikan 
+                    untuk mendukung pekerjaan di Universitas Sriwijaya. Ketentuan dan fasilitas yang didapatkan adalah:
+                  </a>
+                  <ul>
+                    <li><span>
+                      Akun M365 untuk dosen dan tendik adalah namaakun@unsri.ac.id dimana nama akun sama dengan email akun instansi 
+                      (mengajukan akun email untuk dosen dan tendik). (perlu diketahui bahwa akun office 365 dan akun email google unsri merupakan 2 akun yang berbeda).
+                    </span></li>
+                    <li><span>
+                      kepemilikan akun M365 merupakan lisensi milik UNSRI, hanya berlaku selama pengguna menjadi Civitas akademika UNSRI, dan menjadi tanggung jawab pengguna
+                      masing masing.
+                    </span></li>
+                    <li><span>
+                      1 akun M365 hanya dapat digunakan ke 5 perangkat (2 PC/Laptop dan 3 perangkat mobile (Tablet/Smartphone)), jika pengguna ingin menggunakan 
+                      M365 di perangkat lain maka harus melakukan logout di salah satu perangkat yang sudah terdaftar.
+                    </span></li>
+                    <li><span>
+                      Pengguna dapat mengunduh aplikasi dekstop (windows/macOS) M365 dari office.com atau menggunakan aplikasi mobile yang dapat didownload dari Appstore atau 
+                      Playstore. menggunakan login user yang dijelaskan pada point pertama.
+                    </span></li>
+                    <li><span>
+                      mendapatkan layanan penyimpanan cloud onedrive sebesar 1TB, dengan ketentuan penyimpanan data di onedrive hanya untuk keperluan akademik dan pekerjaan 
+                      di UNSRI.
+                    </span></li>
+                    <li><span>
+                      Gunakanlah akun M365 milik institusi ini dengan bijak.
+                    </span></li>
+                  </ul>
+
+              </div>
+
+            </div>
+    
+            <div id="gws" class="tabcontent">
+
+              <div>
+
+                  <a align="justify">
+                    Google Workspace adalah layanan komputasi berbasis cloud dari Google, Layanan ini menyediakan berbagai aplikasi produktivitas, kolaborasi, dan manajemen 
+                    secara lebih efektif, fleksibel, dan terintegrasi.
+                  </a><br><br>
+                  <a align="justify">
+                    Melalui Google Workspace, pengguna dapat memanfaatkan berbagai aplikasi seperti Gmail untuk komunikasi email resmi, Google Drive untuk penyimpanan dan 
+                    berbagi dokumen berbasis cloud sebesar 25GB, Google Docs, Google Sheets, dan Google Slides untuk pembuatan dokumen, pengolahan data, serta presentasi 
+                    secara kolaboratif. Selain itu, terdapat juga Google Meet untuk kegiatan konferensi video dan Google Classroom yang memudahkan pengelolaan kelas digital, 
+                    distribusi materi, serta penilaian tugas secara daring.
+                  </a><br><br>
+                  <a align="justify">
+                    Layanan ini memungkinkan proses pembelajaran berlangsung kapan saja dan di mana saja, karena seluruh data tersimpan secara aman di cloud dan dapat diakses 
+                    melalui berbagai perangkat seperti komputer, laptop, tablet, maupun smartphone. Selain itu, Google Workspace juga dilengkapi dengan fitur 
+                    keamanan dan pengelolaan akun terpusat yang memungkinkan administrator institusi mengatur akses, kebijakan keamanan, serta pengelolaan pengguna dengan 
+                    lebih mudah.
+                  </a><br><br>
+                  <a align="justify">
+                    Dengan dukungan teknologi kolaborasi real-time, integrasi antar aplikasi, serta infrastruktur cloud yang andal, Google Workspace menjadi salah satu solusi 
+                    digital yang membantu lembaga pendidikan meningkatkan kualitas pembelajaran, efisiensi administrasi, dan kolaborasi antara dosen, mahasiswa, serta 
+                    staf akademik.
+                  </a>
+
+              </div>
+
+            </div>
+
         </div>
-        <!-- direktur -->
-    </section>
-    <!-- pimpinan Section -->
+    
 
-    <!-- staff Section -->
-    <section id="trainers" class="section trainers">
-      <div class="container">
-        <div class="row gy-5">
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Noordin As-Siddiq Mangkunegara, M.Kom</h4>
-              <span>Senior Programer</span>
-              <p>
-                Karyawan PTNBH<br>
-                NIPUS : 
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Rian Fitra perdana, S.Kom</h4>
-              <span>Programer</span>
-              <p>
-                ASN PPPK - Penata Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Hendra Wijaya, S.Kom</h4>
-              <span>Database Engineer</span>
-              <p>
-                ASN PPPK - Pranata Komputer<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-4.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Fandi Gunawan, A.Md</h4>
-              <span>Programer UI/UX</span>
-              <p>
-                ASN PPPK - Operator Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Putra Yudha Perdana, S.SI</h4>
-              <span>DEV-OPS/Network Engineer<br></span>
-              <p>
-                ASN PPPK - Penata Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-        </div>
-      </div>
-    </section>
-    <!-- staff Section -->
-
+    </sections>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -301,6 +235,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/tabbar.js"></script>
 
 </body>
 </html>
