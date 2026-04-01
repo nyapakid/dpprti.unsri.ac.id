@@ -23,6 +23,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/tabbar.css" rel="stylesheet">
 
 </head>
 
@@ -88,157 +89,45 @@
   </header>
 
   <main class="main">
-    <!-- pimpinan Section -->
-    <section id="trainers-index" class="section trainers-index">
-      <!-- Pimpinan Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Staff dan Pimpinan</h2>
-        <p>Sub direktorat Pelayanan Infrastruktur Teknologi Informasi</p>
-      </div>
-      <!-- Pimpinan Title -->
+    <section id="starter-section" class="starter-section section">
 
-      <!--pimpinan staff -->
-      <div class="container">
-        
-        <!-- direktur -->
-        <div class="row gy-8 justify-content-center text-center">
-          <!-- Box -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Dr. Ahmad Heryanto,S.Kom., M.T.</h4>
-                <span>
-                  Kepala Subdirektorat Bagian Pelayanan Infrastruktur Teknologi Informasi
-                </span>
-                <p>
-                  NIP / NIDN: 198701222015041002/0022018703<br>
-                  Golongan / Pangkat: III/c Penata<br>
-                  Jabatan Fungsional: Lektor<br>
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
+        <div class="container section-title" data-aos="fade-up">
+
+            <h2>Direktorat Pelayanan dan Pengembangan Teknologi Informasi</h2>
+            <p>Layanan Lab Komputer</p>
+    
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'it-service')">IT Service</button>
+              <button class="tablinks" onclick="openCity(event, 'network-status')">Network Status</button>
+              <button class="tablinks" onclick="openCity(event, 'Topologi-ex')">Topologi External</button>
+              <button class="tablinks" onclick="openCity(event, 'Topologi-in')">Topologi Internal</button>
+              <button class="tablinks" onclick="openCity(event, 'router-status')">Router Status</button>
             </div>
-          </div>
-          <!-- End Box -->
+
+            <div id="it-service" class="tabcontent">
+              
+            </div>
+
+            <div id="network-status" class="tabcontent">
+
+            </div>
+
+            <div id="Topologi-ex" class="tabcontent">
+
+            </div>
+
+            <div id="Topologi-in" class="tabcontent">
+
+            </div>
+
+            <div id="router-status" class="tabcontent">
+
+            </div> 
+
         </div>
-        <!-- direktur -->
-    </section>
-    <!-- pimpinan Section -->
+    
 
-    <!-- staff Section -->
-    <section id="trainers" class="section trainers">
-      <div class="container">
-        <div class="row gy-5">
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Sujianto, S.P</h4>
-              <span>Network Engineer (Core & Monitoring)</span>
-              <p>
-                ASN PPPK - Penata Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Rudiansyah, S.T</h4>
-              <span>Network Engineer (Core & Routing)</span>
-              <p>
-                ASN PPPK - Penata Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Kgs. Rahmat, S.Kom</h4>
-              <span>Junior Network Engineer (Security & Distribution)</span>
-              <p>
-                ASN Pranata Komputer<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-4.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Ramdhono, A.Md</h4>
-              <span>Network Engineer (Infrastructure & Distribution)</span>
-              <p>
-                ASN PPPK - Penata Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Arbain Kahyan, A.Md</h4>
-              <span>Network Engineer (Infrastructure & Distribution)<br></span>
-              <p>
-                ASN PPPK - Penata Layanan Operasional<br>
-                NIP :
-              </p>
-            </div>
-          </div><!-- End Team Member -->
-        </div>
-      </div>
-    </section>
-    <!-- staff Section -->
-
+    </sections>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -301,6 +190,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/tabbar.js"></script>
 
 </body>
 </html>
